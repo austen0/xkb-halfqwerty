@@ -105,7 +105,7 @@ xkb_symbols "basic" {
     key <AD11> { [  bracketleft,   braceleft                          ] } ;
     key <AD12> { [ bracketright,  braceright                          ] } ;
 
-    key <AC01> { [            a,           A,  semicolon,       colon ] } ;
+    key <AC01> { [            a,           A, apostrophe,       colon ] } ;
     key <AC02> { [            s,           S,          l,           L ] } ;
     key <AC03> { [            d,           D,          k,           K ] } ;
     key <AC04> { [            f,           F,          j,           J ] } ;
@@ -154,14 +154,15 @@ xkb_symbols "caps" {
     //
     // Special mappings for this variant are:
     //
-    //    |------------------+-----------|
-    //    | KEY              | FUNCTION  |
-    //    |------------------+-----------|
-    //    | `                | backspace |
-    //    | SHIFT + `        | ~         |
-    //    | CAPS + SHIFT + ` | `         |
-    //    | CAPS + space     | return    |
-    //    |------------------+-----------|
+    //    |----------------------+-----------|
+    //    | KEY                  | FUNCTION  |
+    //    |----------------------+-----------|
+    //    | `                    | backspace |
+    //    | SHIFT + `            | ~         |
+    //    | CAPS + SHIFT + `     | `         |
+    //    | CAPS + space         | return    |
+    //    | CAPS + SHIFT + space | ;         |
+    //    |----------------------+-----------|
 
     include "halfqwerty(basic)"
 
@@ -169,7 +170,7 @@ xkb_symbols "caps" {
 
     include "level3(caps_switch)"
 
-    key <SPCE> { [        space,       space,     Return              ] } ;
+    key <SPCE> { [        space,       space,     Return,   semicolon ] } ;
 
     // As a general rule we try to not change any key behaviour
     // compared to the default us layout, unless the user triggers the
