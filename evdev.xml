@@ -4,7 +4,7 @@
         <shortDescription>hq</shortDescription>
         <description>HalfQWERTY (US)</description>
         <languageList>
-        <iso639Id>eng</iso639Id>
+          <iso639Id>eng</iso639Id>
         </languageList>
       </configItem>
     </layout>
